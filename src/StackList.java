@@ -22,7 +22,7 @@ public class StackList<E> {
         if(head==null)
         {
             System.out.print("its empty");
-            throw new NullPointerException() ;
+            throw new NullPointerException("its empty") ;
         }else{
             temp = head;
         head=head.next;

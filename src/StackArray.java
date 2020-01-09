@@ -9,7 +9,7 @@ public class StackArray {
     public int pop(){
         if(top==-1){
             System.out.println("empty");
-            return Integer.MIN_VALUE;
+            throw new NullPointerException("this is empty");
         }else{
             int temp = arr[top];
             top--;
@@ -20,7 +20,7 @@ public class StackArray {
 
     public void push(int da){
         if(top==arr.length-1){
-            System.out.println("its full");
+            throw new NullPointerException("its full");
         }else
         {
             top++;
